@@ -32,7 +32,7 @@ h1 {
 }
 
 .repoBlock {
-    width: 48%; /* Adjust width to fit two blocks per row */
+    width: 20%; /* Adjust width to fit two blocks per row */
     box-sizing: border-box; /* Prevents width overflow */
 }
 
