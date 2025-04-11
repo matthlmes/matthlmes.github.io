@@ -1,182 +1,151 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="css/css.css">
-    </head>
-    <body>
-        <div id="container">
-            <h1>Matthew Holmes Portfolio</h1>
-    
-        <div class="yearContainer">
-            <h1>Honours</h1>
-            <div class="repoBlock">
-                <h2></h2>
-                <p></p>
-                <a href=""></a>
-            </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/css.css">
+    <script src="js/js.js"></script>
+</head>
+
+<!-- Header Section -->
+<header class="header">
+    <div class="header-content">
+        <h1>Matthew Holmes Portfolio</h1>
+        <p class="subtitle">Showcasing my projects</p>
+    </div>
+</header>
+
+<body>
+    <!-- Honours Section -->
+    <h1>Honours</h1>
+    <div class="container">
+        <div class="block" data-title="Project Title" data-description="Project Description" data-link="project-link">
+            <h2>Project Title</h2>
+            <p>Project Description</p>
+            <a href="project-link">View Project</a>
         </div>
-    
-        <div class="yearContainer">
-            <h1>Home Projects</h1>
-            <div class="repoBlock">
-                <h2>ATM Interface</h2>
-                <p>Languages used: Java</p>
-                <ul>
-                    <li></li>
-                </ul>
-                <a href=""></a>
-            </div>
+    </div>
 
-            <div class="repoBlock">
-                <h2>Flappy Clone</h2>
-                <p>Languages used: Java</p>
-                <ul>
-                    <li></li>
-                </ul>
-                <a href=""></a>
-            </div>
-
-            <div class="repoBlock">
-                <h2>Chess Game</h2>
-                <p>Languages used: Java</p>
-                <ul>
-                    <li></li>
-                </ul>
-                <a href=""></a>
-            </div>
-
-            <div class="repoBlock">
-                <h2>2D Pixel RPG Game</h2>
-                <p>Languages used: C++</p>
-                <ul>
-                    <li></li>
-                </ul>
-                <a href=""></a>
-            </div>
+    <!-- Home Projects Section -->
+    <h1>Home Projects</h1>
+    <div class="container">
+        <div class="block" data-title="ATM Interface" data-description="A simple Java-based ATM simulation.">
+            <h2>ATM Interface</h2>
+            <p>Languages used: Java</p></br>
+            <a href="#">View Project</a>
         </div>
+        <div class="block" data-title="Flappy Clone" data-description="A simple Java-based Flappy bird clone.">
+            <h2>Flappy Clone</h2>
+            <p>Languages used: Java</p></br>
+            <a href="#">View Project</a>
+        </div>
+        <div class="block" data-title="Chess Game" data-description="A simple Java-based Chess Game.">
+            <h2>Chess Game</h2>
+            <p>Languages used: Java</p></br>
+            <a href="#">View Project</a>
+        </div>
+        <div class="block" data-title="Pixel RPG" data-description="A 2D Pixel RPG created in C++.">
+            <h2>2D Pixel RPG</h2>
+            <p>Languages used: C++</p></br>
+            <a href="#">View Project</a>
+        </div>
+    </div>
 
-        <div class="yearContainer">
-            <h1>Year 3</h1>
-            <div class="repoBlock">
-                <h2>Concurrent Programming</h2>
-                <p>Languages used: Java</p>
-                <ul>
-                    <li>Task: Convert a non-thread-safe program into a thread-safe version</li>
-                    <li>Methods used:
-                        <ul>
-                            <li>Locks or synchronized code</li>
-                            <li>Thread-safe versions of collections</li>
-                            <li>Executors</li>
-                        </ul>
-                    </li>
-                    <li>Overall Module Grade: A</li>
-                </ul>
-                <a href="https://github.com/matthlmes/ConcurrentProgramming">Concurrent Programming Github</a>
-            </div>
-    
-            <div class="repoBlock">
-                <h2>Pirate Studies</h2>
-                <p>Languages used: HTML/EJS, Javascript, CSS</p>
-                <ul>
-                    <li>Developed by Sonica (team of 4)</li>
-                    <li>FullStack website helping students find local work experience</li>
-                    <li>Pages:
-                        <ul>
-                            <li>Index (log-in and sign-up)</li>
-                            <li>Home (shift details, calendar, app news, welcome message)</li>
-                            <li>Calendar (event management)</li>
-                            <li>Profile (user info and updates)</li>
-                            <li>Placements (future feature for local company postings)</li>
-                        </ul>
-                    </li>
-                    <li>Backend: MongoDB, Express, Node.js</li>
-                    <li>Overall Module Grade: TBC</li>
-                </ul>
-                <a href="https://github.com/matthlmes/CM3141-Sonica">Pirate Studies Github</a>
-            </div>
+    <!-- Year 3 Section -->
+    <h1>Year 3</h1>
+    <div class="container">
+
+        <div class="block" data-title="AI For Problem Solving"
+            data-description="Implementing A* search algorithm with given aips library for a transport puzzle"
+            data-details=""
+            data-list=""
+            data-images="images/AIFPS1.png,images/AIFPS2.png">
+            <h2>AI For Problem Solving</h2>
+            <p>Languages used: Java</p></br>
+            <p>Overall Grade: TBC</p>
+            <a href="#">Private Github</a>
         </div>
 
-        <div class="yearContainer">
-            <h1>Year 2</h1>
-            <div class="repoBlock">
-                <h2>Vita</h2>
-                <p>Languages used: HTML/EJS, Javascript, CSS</p>
-                <ul>
-                    <li>Created by Sonica (team of 3)</li>
-                    <li>News/Social Media full-stack website</li>
-                    <li>Pages:
-                        <ul>
-                            <li>Index (login/signup)</li>
-                            <li>Dashboard (news API + user posts)</li>
-                            <li>Profile (user posts + connections)</li>
-                            <li>Settings (account customization)</li>
-                            <li>Chat (Socket.io, chat system)</li>
-                            <li>Weather (METOffice API integration)</li>
-                        </ul>
-                    </li>
-                    <li>Backend: MongoDB, Express, Node.js</li>
-                    <li>Overall Module Grade: A</li>
-                </ul>
-                <a href="https://github.com/matthlmes/Vita">Vita Github</a>
-            </div>
-    
-            <div class="repoBlock">
-                <h2>BankingApp</h2>
-                <p>Languages used: Java</p>
-                <ul>
-                    <li>Banking app implementing OOP modeling</li>
-                    <li>Account types:
-                        <ul>
-                            <li>Basic account</li>
-                            <li>ISA</li>
-                            <li>Reward account</li>
-                        </ul>
-                    </li>
-                    <li>GUI built using JavaFX</li>
-                    <li>Overall Module Grade: B</li>
-                </ul>
-                <a href="https://github.com/matthlmes/BankingApp">Banking App Github</a>
-            </div>
+        <div class="block" data-title="Concurrent Programming" data-description="Converted a non-thread-safe program into a thread-safe version using: locks, synchronized blocks and executors" 
+        data-details="This project involved the conversion of a non-thread-safe program into a thread-safe program using Java synchronization techniques." 
+        data-list="Locks, synchronized code, Executors">
+            <h2>Concurrent Programming</h2>
+            <p>Languages used: Java</p><br>
+            <p>Overall Grade: A</p>
+            <a href="https://github.com/matthlmes/ConcurrentProgramming">View on GitHub</a>
+        </div>
+        
+        <div class="block" data-title="Pirate Studies"
+            data-description="FullStack website helping students find local work experience."
+            data-details="Developed by Sonica (team of 4). Pages: "
+            data-list="Index (log-in and sign-up), Home (shift details, calendar, app news), Calendar (event management), Profile (user info and updates), Placements (future feature for local company postings)"
+            data-images="">
+            <h2>Pirate Studies</h2>
+            <p>Languages used: HTML/EJS, JavaScript, CSS</p>
+            <P>Backend: MongoDB, Express, Node.js</P></br>
+            <p>Overall Grade: TBC</p>
+            <a href="https://github.com/matthlmes/CM3141-Sonica">View on GitHub</a>
+        </div>
+    </div>
 
-            <div class="repoBlock">
-                <h2>Airport Device</h2>
-                <p>Languages used: Python</p>
-                <ul>
-                    <li>Internet of Things (IoT) project using Raspberry Pi</li>
-                    <li>Team project (3 members)</li>
-                    <li>Devices involved:
-                        <ul>
-                            <li><strong>Baggage Device</strong>
-                                <ul>
-                                    <li>Subscribes to MQTT (sonica/baggage) for baggage tag scanning</li>
-                                    <li>Publishes data to Adafruit for storage and visualization</li>
-                                    <li>Used to direct baggage to the correct gate via conveyor</li>
-                                </ul>
-                            </li>
-                            <li><strong>Weather Device</strong>
-                                <ul>
-                                    <li>Pushes data to MQTT (sonica/weather) about weather conditions</li>
-                                    <li>Collects water detection and environmental sensor data</li>
-                                    <li>Publishes data to Adafruit dashboard for airport monitoring</li>
-                                </ul>
-                            </li>
-                            <li><strong>Air Traffic Device</strong>
-                                <ul>
-                                    <li>Detects aircraft movement and assigns appropriate routes</li>
-                                    <li>Communicates findings to Adafruit for dashboard visualization</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>Overall Module Grade: C</li>
-                </ul>
-                <a href="https://github.com/matthlmes/Sonica_AirportDevice">Airport Device Github</a>
+    <!-- Year 2 Section -->
+    <h1>Year 2</h1>
+    <div class="container">
+        <div class="block" data-title="Vita" data-description="Created by Sonica (team of 3). News/Social Media full-stack website" 
+        data-details="Pages:" 
+        data-list="Index (login/signup), Dashboard (news API + user posts), Profile (user posts + connections), Settings (account customization), Chat (Socket.io, chat system), Weather (METOffice API integration)"
+        data-images="">
+            <h2>Vita</h2>
+            <p>Languages used: HTML/EJS, JavaScript, CSS</p>
+            <p>Backend: MongoDB, Express, Node.js</p></br>
+            <p>Overall Grade: A</p>
+            <a href="https://github.com/matthlmes/Vita">View on GitHub</a>
+        </div>
+        
+        <div class="block" data-title="Banking App" data-description="Banking app implementing OOP modeling" 
+        data-details="GUI built using JavaFX with Account types: " 
+        data-list="Basic account, ISA, Reward account">
+            <h2>Banking App</h2>
+            <p>Languages used: Java</p></br>
+            <p>Overall Grade: B</p>
+            <a href="https://github.com/matthlmes/BankingApp">View on GitHub</a>
+        </div>
+        
+        <div class="block" data-title="Airport Device" 
+        data-description="Internet of Things (IoT) project using Raspberry Pi" 
+        data-details="Team project (3 members). Devices involved: " 
+        data-list="Baggage Device: Subscribes to MQTT (sonica/baggage) for baggage tag scanning Publishes data to Adafruit for storage and visualization Used to direct baggage to the correct gate via conveyor, 
+        Weather Device: Pushes data to MQTT (sonica/weather) about weather conditions Collects water detection and environmental sensor data Publishes data to Adafruit dashboard for airport monitoring, 
+        Air Traffic Device: Detects aircraft movement and assigns appropriate routes Communicates findings to Adafruit for dashboard visualization">
+            <h2>Airport Device</h2>
+            <p>Languages used: Python</p></br>
+            <p>Overall Grade: C</p>
+            <a href="https://github.com/matthlmes/Sonica_AirportDevice">View on GitHub</a>
+        </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <ul id="modal-list"></ul> <!-- List inside the modal -->
+            
+            <!-- Image Carousel -->
+            <div class="carousel-container">
+                <button class="carousel-prev">&#10094;</button>
+                <div id="modal-carousel" class="carousel">
+                    <!-- Images will be added dynamically here -->
+                </div>
+                <button class="carousel-next">&#10095;</button>
             </div>
         </div>
-
-
-        </div>
-    </body>
-    </html>
-    
+    </div>
+</body>
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2025 Matthew Holmes. | <a href="#">GitHub</a> | <a href="#">LinkedIn</a></p>
+</footer>
+</html>

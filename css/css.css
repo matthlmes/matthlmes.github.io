@@ -1,59 +1,220 @@
-/* Reset some default styles */
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    background: linear-gradient(to bottom, #f4f4f9, #d0d6e1);
+    color: #333;
 }
 
-/* Container for portfolio */
-#container {
-    width: 80%;
-    margin: auto;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Adjust as needed */
-}
-
-
-/* Style for headings */
+/* Heading Styles */
 h1 {
     text-align: center;
-    color: #333;
-    margin-bottom: 20px;
+    margin: 3% 0;
+    font-size: 2.5em;
+    color: #4b6584;
 }
 
-/* Ensure repoBlocks are displayed side by side */
-.yearContainer {
+/* Container for Blocks */
+.container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 3%; /* Space between blocks */
+    justify-content: center;
+    width:80%;
+    padding-left: 10%;
+    margin-bottom: 4%;
 }
 
-.repoBlock {
-    width: 20%; /* Adjust width to fit two blocks per row */
-    box-sizing: border-box; /* Prevents width overflow */
+/* Individual Blocks */
+.block {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 3%;
+    border-radius: 8px;
+    border: 2px solid #e0e6ed;
+    flex: 1;
+    max-width: 25%;
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-
-/* Titles inside blocks */
-.repoBlock h2 {
-    color: #444;
+.block:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Links */
-.repoBlock a {
-    display: inline-block;
-    margin-top: 10px;
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 2em;
+    border-radius: 10px;
+    width: 60%;
+    max-width: 600px;
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.close {
+    position: absolute;
+    top: 1em;
+    right: 1.5em;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #888;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Carousel Styles */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
     padding: 10px;
-    background-color: #007BFF;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+    transform: translateY(-50%);
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+.carousel-prev:hover, .carousel-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4b6584;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer a {
     color: white;
     text-decoration: none;
-    border-radius: 5px;
 }
 
-.repoBlock a:hover {
-    background-color: #0056b3;
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Header Section Styles */
+.header {
+    background: linear-gradient(to right, #4b6584, #6c7b8b);
+    color: #f9f9f9;
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+}
+
+.header .subtitle {
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-style: italic;
+    color: #e0e6ed;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .block {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em; 
+    }
 }
