@@ -24,15 +24,18 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Block styling for sections */
-.repoBlock {
-    background-color: #fff;
-    padding: 20px;
-    margin: 10px 0;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 48%; /* Adjust width to fit two blocks per row */
+/* Ensure repoBlocks are displayed side by side */
+.yearContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+
+.repoBlock {
+    width: 48%; /* Adjust width to fit two blocks per row */
+    box-sizing: border-box; /* Prevents width overflow */
+}
+
 
 
 /* Titles inside blocks */
